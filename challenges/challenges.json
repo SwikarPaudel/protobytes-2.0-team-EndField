@@ -1,0 +1,186 @@
+[
+  {
+    "id": "vars_01",
+    "area": "variables",
+    "title": "The First Declaration",
+    "difficulty": 1,
+    "description": "Declare an integer variable `x` and set it to 42. Print it to the console.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Declare x and print it\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "", "expected_output": "42", "name": "basic_output"}
+    ],
+    "hints": [
+      "Use `int x = 42;`",
+      "Use `cout << x;` to print"
+    ],
+    "xp_reward": 100,
+    "enemy": {
+      "name": "Goblin of Undeclared",
+      "hp": 100,
+      "sprite": "res://assets/enemies/goblin.png"
+    }
+  },
+  {
+    "id": "vars_02",
+    "area": "variables",
+    "title": "Type Juggler",
+    "difficulty": 1,
+    "description": "Read an integer from input, multiply it by 2, and print the result.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read an integer, double it, print it\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "5",  "expected_output": "10", "name": "basic"},
+      {"input": "0",  "expected_output": "0",  "name": "zero"},
+      {"input": "-3", "expected_output": "-6", "name": "negative"}
+    ],
+    "hints": [
+      "Use `cin >> n;` to read input",
+      "Use `cout << n * 2;` to print the doubled value"
+    ],
+    "xp_reward": 120,
+    "enemy": {
+      "name": "Slime of Overflow",
+      "hp": 120,
+      "sprite": "res://assets/enemies/slime.png"
+    }
+  },
+  {
+    "id": "vars_03",
+    "area": "variables",
+    "title": "The Swapper",
+    "difficulty": 2,
+    "description": "Read two integers `a` and `b`, then print them swapped (b first, then a), separated by a space.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read two integers and print swapped\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "3 7",   "expected_output": "7 3",   "name": "basic"},
+      {"input": "0 0",   "expected_output": "0 0",   "name": "same"},
+      {"input": "-1 10", "expected_output": "10 -1", "name": "mixed"}
+    ],
+    "hints": [
+      "You can use a temp variable, or just print in reverse order",
+      "cout << b << \" \" << a;"
+    ],
+    "xp_reward": 150,
+    "enemy": {
+      "name": "Mimic of Mutation",
+      "hp": 150,
+      "sprite": "res://assets/enemies/mimic.png"
+    }
+  },
+  {
+    "id": "loops_01",
+    "area": "loops",
+    "title": "The Counter",
+    "difficulty": 2,
+    "description": "Read an integer `n` and print numbers from 1 to n, each on a new line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n and count from 1 to n\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "5", "expected_output": "1\n2\n3\n4\n5", "name": "five"},
+      {"input": "1", "expected_output": "1", "name": "one"},
+      {"input": "3", "expected_output": "1\n2\n3", "name": "three"}
+    ],
+    "hints": [
+      "Use a `for` loop: `for (int i = 1; i <= n; i++)`",
+      "Print each number with `cout << i << endl;`"
+    ],
+    "xp_reward": 150,
+    "enemy": {
+      "name": "Skeleton of Infinity",
+      "hp": 180,
+      "sprite": "res://assets/enemies/skeleton.png"
+    }
+  },
+  {
+    "id": "loops_02",
+    "area": "loops",
+    "title": "Sum Seeker",
+    "difficulty": 3,
+    "description": "Read an integer `n` and print the sum of all integers from 1 to n.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n and calculate the sum 1+2+...+n\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "5",   "expected_output": "15",   "name": "basic"},
+      {"input": "1",   "expected_output": "1",    "name": "one"},
+      {"input": "100", "expected_output": "5050", "name": "hundred"}
+    ],
+    "hints": [
+      "Use a loop to accumulate: `sum += i;`",
+      "Or use the formula: n*(n+1)/2"
+    ],
+    "xp_reward": 180,
+    "enemy": {
+      "name": "Wraith of Accumulation",
+      "hp": 200,
+      "sprite": "res://assets/enemies/wraith.png"
+    }
+  },
+  {
+    "id": "loops_03",
+    "area": "loops",
+    "title": "FizzBuzz Knight",
+    "difficulty": 4,
+    "description": "Read `n`. For each number 1 to n: print \"Fizz\" if divisible by 3, \"Buzz\" if by 5, \"FizzBuzz\" if by both, else the number. One per line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Classic FizzBuzz\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "5",  "expected_output": "1\n2\nFizz\n4\nBuzz", "name": "five"},
+      {"input": "15", "expected_output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz", "name": "fifteen"},
+      {"input": "1",  "expected_output": "1", "name": "one"}
+    ],
+    "hints": [
+      "Check divisibility by 15 first (FizzBuzz), then 3, then 5",
+      "Use the modulo operator %"
+    ],
+    "xp_reward": 250,
+    "enemy": {
+      "name": "Dragon of Conditionals",
+      "hp": 300,
+      "sprite": "res://assets/enemies/dragon.png"
+    }
+  },
+  {
+    "id": "arrays_01",
+    "area": "arrays",
+    "title": "The Reverser",
+    "difficulty": 4,
+    "description": "Read an integer `n`, then `n` integers. Print them in reverse order, separated by spaces.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n numbers and print reversed\n    \n    return 0;\n}",
+    "test_cases": [
+      {"input": "5\n1 2 3 4 5", "expected_output": "5 4 3 2 1", "name": "basic"},
+      {"input": "1\n42",         "expected_output": "42",        "name": "single"},
+      {"input": "3\n-1 0 1",     "expected_output": "1 0 -1",    "name": "mixed"}
+    ],
+    "hints": [
+      "Store the numbers in an array first, then loop backwards",
+      "Use `arr[n-1], arr[n-2], ... arr[0]`"
+    ],
+    "xp_reward": 200,
+    "enemy": {
+      "name": "Golem of Index",
+      "hp": 250,
+      "sprite": "res://assets/enemies/golem.png"
+    }
+  },
+  {
+    "id": "functions_01",
+    "area": "functions",
+    "title": "The Factorial",
+    "difficulty": 5,
+    "description": "Write a function `factorial(int n)` that returns n!. Read n from input and print factorial(n).",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Write your factorial function here\n\nint main() {\n    int n;\n    cin >> n;\n    cout << factorial(n);\n    return 0;\n}",
+    "test_cases": [
+      {"input": "5",  "expected_output": "120", "name": "five"},
+      {"input": "0",  "expected_output": "1",   "name": "zero"},
+      {"input": "1",  "expected_output": "1",   "name": "one"},
+      {"input": "10", "expected_output": "3628800", "name": "ten"}
+    ],
+    "hints": [
+      "Base case: 0! = 1",
+      "Recursive: n! = n * (n-1)!",
+      "Or use a loop: result *= i for i in 1..n"
+    ],
+    "xp_reward": 300,
+    "enemy": {
+      "name": "Hydra of Recursion",
+      "hp": 350,
+      "sprite": "res://assets/enemies/hydra.png"
+    }
+  }
+]
