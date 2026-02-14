@@ -1,0 +1,1351 @@
+[
+  {
+    "id": "vars_01",
+    "area": "variables",
+    "title": "The First Declaration",
+    "difficulty": "easy",
+    "description": "Declare an integer variable `x` and set it to 42. Print it to the console.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Declare x and print it\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "42",
+        "name": "basic_output"
+      }
+    ],
+    "hints": [
+      "Use `int x = 42;`",
+      "Use `cout << x;` to print"
+    ],
+    "xp_reward": 100,
+    "base_damage": 10
+  },
+  {
+    "id": "vars_02",
+    "area": "variables",
+    "title": "Type Juggler",
+    "difficulty": "easy",
+    "description": "Read an integer from input, multiply it by 2, and print the result.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read an integer, double it, print it\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "10",
+        "name": "basic"
+      },
+      {
+        "input": "0",
+        "expected_output": "0",
+        "name": "zero"
+      },
+      {
+        "input": "-3",
+        "expected_output": "-6",
+        "name": "negative"
+      }
+    ],
+    "hints": [
+      "Use `cin >> n;` to read input",
+      "Use `cout << n * 2;` to print the doubled value"
+    ],
+    "xp_reward": 120,
+    "base_damage": 12
+  },
+  {
+    "id": "vars_03",
+    "area": "variables",
+    "title": "The Swapper",
+    "difficulty": "medium",
+    "description": "Read two integers `a` and `b`, then print them swapped (b first, then a), separated by a space.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read two integers and print swapped\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3 7",
+        "expected_output": "7 3",
+        "name": "basic"
+      },
+      {
+        "input": "0 0",
+        "expected_output": "0 0",
+        "name": "same"
+      },
+      {
+        "input": "-1 10",
+        "expected_output": "10 -1",
+        "name": "mixed"
+      }
+    ],
+    "hints": [
+      "You can use a temp variable, or just print in reverse order",
+      "cout << b << \" \" << a;"
+    ],
+    "xp_reward": 150,
+    "base_damage": 15
+  },
+  {
+    "id": "loops_01",
+    "area": "loops",
+    "title": "The Counter",
+    "difficulty": "medium",
+    "description": "Read an integer `n` and print numbers from 1 to n, each on a new line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n and count from 1 to n\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "1\n2\n3\n4\n5",
+        "name": "five"
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "name": "one"
+      },
+      {
+        "input": "3",
+        "expected_output": "1\n2\n3",
+        "name": "three"
+      }
+    ],
+    "hints": [
+      "Use a `for` loop: `for (int i = 1; i <= n; i++)`",
+      "Print each number with `cout << i << endl;`"
+    ],
+    "xp_reward": 150,
+    "base_damage": 18
+  },
+  {
+    "id": "loops_02",
+    "area": "loops",
+    "title": "Sum Seeker",
+    "difficulty": "hard",
+    "description": "Read an integer `n` and print the sum of all integers from 1 to n.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n and calculate the sum 1+2+...+n\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "15",
+        "name": "basic"
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "name": "one"
+      },
+      {
+        "input": "100",
+        "expected_output": "5050",
+        "name": "hundred"
+      }
+    ],
+    "hints": [
+      "Use a loop to accumulate: `sum += i;`",
+      "Or use the formula: n*(n+1)/2"
+    ],
+    "xp_reward": 180,
+    "base_damage": 20
+  },
+  {
+    "id": "loops_03",
+    "area": "loops",
+    "title": "FizzBuzz Knight",
+    "difficulty": "expert",
+    "description": "Read `n`. For each number 1 to n: print \"Fizz\" if divisible by 3, \"Buzz\" if by 5, \"FizzBuzz\" if by both, else the number. One per line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Classic FizzBuzz\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "1\n2\nFizz\n4\nBuzz",
+        "name": "five"
+      },
+      {
+        "input": "15",
+        "expected_output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz",
+        "name": "fifteen"
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "name": "one"
+      }
+    ],
+    "hints": [
+      "Check divisibility by 15 first (FizzBuzz), then 3, then 5",
+      "Use the modulo operator %"
+    ],
+    "xp_reward": 250,
+    "base_damage": 30
+  },
+  {
+    "id": "arrays_01",
+    "area": "arrays",
+    "title": "The Reverser",
+    "difficulty": "expert",
+    "description": "Read an integer `n`, then `n` integers. Print them in reverse order, separated by spaces.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n numbers and print reversed\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "5 4 3 2 1",
+        "name": "basic"
+      },
+      {
+        "input": "1\n42",
+        "expected_output": "42",
+        "name": "single"
+      },
+      {
+        "input": "3\n-1 0 1",
+        "expected_output": "1 0 -1",
+        "name": "mixed"
+      }
+    ],
+    "hints": [
+      "Store the numbers in an array first, then loop backwards",
+      "Use `arr[n-1], arr[n-2], ... arr[0]`"
+    ],
+    "xp_reward": 200,
+    "base_damage": 25
+  },
+  {
+    "id": "functions_01",
+    "area": "functions",
+    "title": "The Factorial",
+    "difficulty": "legendary",
+    "description": "Write a function `factorial(int n)` that returns n!. Read n from input and print factorial(n).",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Write your factorial function here\n\nint main() {\n    int n;\n    cin >> n;\n    cout << factorial(n);\n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "120",
+        "name": "five"
+      },
+      {
+        "input": "0",
+        "expected_output": "1",
+        "name": "zero"
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "name": "one"
+      },
+      {
+        "input": "10",
+        "expected_output": "3628800",
+        "name": "ten"
+      }
+    ],
+    "hints": [
+      "Base case: 0! = 1",
+      "Recursive: n! = n * (n-1)!",
+      "Or use a loop: result *= i for i in 1..n"
+    ],
+    "xp_reward": 300,
+    "base_damage": 35
+  },
+  {
+    "id": "level1_01",
+    "area": "basics",
+    "title": "Hello Coder",
+    "difficulty": "easy",
+    "description": "Print 'Hello, World!' to the console.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Print Hello, World!\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Hello, World!",
+        "name": "basic_hello_0"
+      }
+    ],
+    "hints": [
+      "Use cout to print.Output should match exactly, including punctuation and capitalization.",
+      "cout << \"Hello, World!\";"
+    ],
+    "xp_reward": 50,
+    "base_damage": 5
+  },
+  {
+    "id": "level1_02",
+    "area": "basics",
+    "title": "The First Declaration",
+    "difficulty": "easy",
+    "description": "Declare an integer variable `x` and set it to 42. Print it to the console.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Declare x and print it\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "42",
+        "name": "basic_output"
+      }
+    ],
+    "hints": [
+      "Use int x = 42;",
+      "Use cout << x; to print"
+    ],
+    "xp_reward": 100,
+    "base_damage": 10
+  },
+  {
+    "id": "level1_03",
+    "area": "basics",
+    "title": "Type Juggler",
+    "difficulty": "easy",
+    "description": "Read an integer from input, multiply it by 2, and print the result.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read an integer, double it, print it\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "10",
+        "name": "basic"
+      },
+      {
+        "input": "0",
+        "expected_output": "0",
+        "name": "zero"
+      },
+      {
+        "input": "-3",
+        "expected_output": "-6",
+        "name": "negative"
+      }
+    ],
+    "hints": [
+      "Use cin >> n; to read input",
+      "Use cout << n * 2; to print the doubled value"
+    ],
+    "xp_reward": 120,
+    "base_damage": 12
+  },
+  {
+    "id": "level1_04",
+    "area": "basics",
+    "title": "The Calculator",
+    "difficulty": "easy",
+    "description": "Read two integers and print their sum, difference, product, and quotient (integer division), each on a new line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read two integers and perform operations\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "10 5",
+        "expected_output": "15\n5\n50\n2",
+        "name": "basic"
+      },
+      {
+        "input": "7 3",
+        "expected_output": "10\n4\n21\n2",
+        "name": "standard"
+      }
+    ],
+    "hints": [
+      "Read two variables: cin >> a >> b;",
+      "Print each result on a new line"
+    ],
+    "xp_reward": 130,
+    "base_damage": 13
+  },
+  {
+    "id": "level1_05",
+    "area": "basics",
+    "title": "The Swapper",
+    "difficulty": "easy",
+    "description": "Read two integers `a` and `b`, then print them swapped (b first, then a), separated by a space.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read two integers and print swapped\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3 7",
+        "expected_output": "7 3",
+        "name": "basic"
+      },
+      {
+        "input": "0 0",
+        "expected_output": "0 0",
+        "name": "same"
+      },
+      {
+        "input": "-1 10",
+        "expected_output": "10 -1",
+        "name": "mixed"
+      }
+    ],
+    "hints": [
+      "You can use a temp variable, or just print in reverse order",
+      "cout << b << \" \" << a;"
+    ],
+    "xp_reward": 140,
+    "base_damage": 15
+  },
+  {
+    "id": "level1_06",
+    "area": "basics",
+    "title": "Even or Odd",
+    "difficulty": "easy",
+    "description": "Read an integer and print 'Even' if it's even, 'Odd' if it's odd.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Check if number is even or odd\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "4",
+        "expected_output": "Even",
+        "name": "even"
+      },
+      {
+        "input": "7",
+        "expected_output": "Odd",
+        "name": "odd"
+      },
+      {
+        "input": "0",
+        "expected_output": "Even",
+        "name": "zero"
+      }
+    ],
+    "hints": [
+      "Use the modulo operator %",
+      "if (n % 2 == 0) it's even"
+    ],
+    "xp_reward": 110,
+    "base_damage": 11
+  },
+  {
+    "id": "level1_07",
+    "area": "basics",
+    "title": "Max of Two",
+    "difficulty": "easy",
+    "description": "Read two integers and print the larger one.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Find and print the maximum\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5 3",
+        "expected_output": "5",
+        "name": "first_larger"
+      },
+      {
+        "input": "2 8",
+        "expected_output": "8",
+        "name": "second_larger"
+      },
+      {
+        "input": "4 4",
+        "expected_output": "4",
+        "name": "equal"
+      }
+    ],
+    "hints": [
+      "Use an if-else statement",
+      "Or use max(a, b) from <algorithm>"
+    ],
+    "xp_reward": 115,
+    "base_damage": 11
+  },
+  {
+    "id": "level1_08",
+    "area": "basics",
+    "title": "Temperature Converter",
+    "difficulty": "easy",
+    "description": "Read a temperature in Celsius and print it in Fahrenheit. Formula: F = C * 9/5 + 32",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Convert Celsius to Fahrenheit\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "0",
+        "expected_output": "32",
+        "name": "freezing"
+      },
+      {
+        "input": "100",
+        "expected_output": "212",
+        "name": "boiling"
+      },
+      {
+        "input": "25",
+        "expected_output": "77",
+        "name": "room_temp"
+      }
+    ],
+    "hints": [
+      "Use float or double for accuracy",
+      "F = C * 9 / 5 + 32"
+    ],
+    "xp_reward": 125,
+    "base_damage": 12
+  },
+  {
+    "id": "level1_09",
+    "area": "basics",
+    "title": "Simple Grade",
+    "difficulty": "easy",
+    "description": "Read a score (0-100). Print 'Pass' if score >= 50, otherwise 'Fail'.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Check pass or fail\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "75",
+        "expected_output": "Pass",
+        "name": "pass"
+      },
+      {
+        "input": "45",
+        "expected_output": "Fail",
+        "name": "fail"
+      },
+      {
+        "input": "50",
+        "expected_output": "Pass",
+        "name": "boundary"
+      }
+    ],
+    "hints": [
+      "Use if (score >= 50)",
+      "Print appropriate message"
+    ],
+    "xp_reward": 105,
+    "base_damage": 10
+  },
+  {
+    "id": "level1_10",
+    "area": "basics",
+    "title": "Circle Area",
+    "difficulty": "easy",
+    "description": "Read the radius of a circle and print its area. Use 3.14 for PI. Area = PI * r * r",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Calculate circle area\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "78.5",
+        "name": "radius_5"
+      },
+      {
+        "input": "10",
+        "expected_output": "314",
+        "name": "radius_10"
+      },
+      {
+        "input": "1",
+        "expected_output": "3.14",
+        "name": "unit_circle"
+      }
+    ],
+    "hints": [
+      "Use double for precision",
+      "area = 3.14 * r * r"
+    ],
+    "xp_reward": 135,
+    "base_damage": 13
+  },
+  {
+    "id": "level2_01",
+    "area": "loops",
+    "title": "The Counter",
+    "difficulty": "medium",
+    "description": "Read an integer `n` and print numbers from 1 to n, each on a new line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n and count from 1 to n\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "1\n2\n3\n4\n5",
+        "name": "five"
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "name": "one"
+      },
+      {
+        "input": "3",
+        "expected_output": "1\n2\n3",
+        "name": "three"
+      }
+    ],
+    "hints": [
+      "Use a for loop: for (int i = 1; i <= n; i++)",
+      "Print each number with cout << i << endl;"
+    ],
+    "xp_reward": 150,
+    "base_damage": 18
+  },
+  {
+    "id": "level2_02",
+    "area": "loops",
+    "title": "Sum Seeker",
+    "difficulty": "medium",
+    "description": "Read an integer `n` and print the sum of all integers from 1 to n.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n and calculate the sum 1+2+...+n\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "15",
+        "name": "basic"
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "name": "one"
+      },
+      {
+        "input": "100",
+        "expected_output": "5050",
+        "name": "hundred"
+      }
+    ],
+    "hints": [
+      "Use a loop to accumulate: sum += i;",
+      "Or use the formula: n*(n+1)/2"
+    ],
+    "xp_reward": 180,
+    "base_damage": 20
+  },
+  {
+    "id": "level2_03",
+    "area": "loops",
+    "title": "Pattern Printer",
+    "difficulty": "medium",
+    "description": "Read integer n. Print n lines where line i has i asterisks. Example: n=3 prints:\n*\n**\n***",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Print pattern\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3",
+        "expected_output": "\n**\n**",
+        "name": "three"
+      },
+      {
+        "input": "1",
+        "expected_output": "",
+        "name": "one"
+      },
+      {
+        "input": "5",
+        "expected_output": "\n**\n***\n****\n*****",
+        "name": "five"
+      }
+    ],
+    "hints": [
+      "Use nested loops: outer for rows, inner for stars",
+      "for (int j = 0; j < i; j++) cout << \"*\";"
+    ],
+    "xp_reward": 190,
+    "base_damage": 21
+  },
+  {
+    "id": "level2_04",
+    "area": "loops",
+    "title": "FizzBuzz Knight",
+    "difficulty": "medium",
+    "description": "Read `n`. For each number 1 to n: print 'Fizz' if divisible by 3, 'Buzz' if by 5, 'FizzBuzz' if by both, else the number. One per line.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Classic FizzBuzz\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "1\n2\nFizz\n4\nBuzz",
+        "name": "five"
+      },
+      {
+        "input": "15",
+        "expected_output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz",
+        "name": "fifteen"
+      }
+    ],
+    "hints": [
+      "Check divisibility by 15 first (FizzBuzz), then 3, then 5",
+      "Use the modulo operator %"
+    ],
+    "xp_reward": 220,
+    "base_damage": 25
+  },
+  {
+    "id": "level2_05",
+    "area": "strings",
+    "title": "String Length",
+    "difficulty": "medium",
+    "description": "Read a string (one word) and print its length.",
+    "starter_code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    // Read string and print length\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "hello",
+        "expected_output": "5",
+        "name": "basic"
+      },
+      {
+        "input": "C++",
+        "expected_output": "3",
+        "name": "short"
+      },
+      {
+        "input": "programming",
+        "expected_output": "11",
+        "name": "long"
+      }
+    ],
+    "hints": [
+      "Use string s; cin >> s;",
+      "Print s.length() or s.size()"
+    ],
+    "xp_reward": 160,
+    "base_damage": 17
+  },
+  {
+    "id": "level2_06",
+    "area": "strings",
+    "title": "Reverse String",
+    "difficulty": "medium",
+    "description": "Read a string and print it reversed.",
+    "starter_code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    // Reverse the string\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "hello",
+        "expected_output": "olleh",
+        "name": "basic"
+      },
+      {
+        "input": "code",
+        "expected_output": "edoc",
+        "name": "short"
+      },
+      {
+        "input": "a",
+        "expected_output": "a",
+        "name": "single"
+      }
+    ],
+    "hints": [
+      "Loop from end to beginning",
+      "Or use reverse(s.begin(), s.end()) from <algorithm>"
+    ],
+    "xp_reward": 175,
+    "base_damage": 18
+  },
+  {
+    "id": "level2_07",
+    "area": "strings",
+    "title": "Palindrome Checker",
+    "difficulty": "medium",
+    "description": "Read a string. Print 'Yes' if it's a palindrome, 'No' otherwise.",
+    "starter_code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    // Check palindrome\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "racecar",
+        "expected_output": "Yes",
+        "name": "palindrome"
+      },
+      {
+        "input": "hello",
+        "expected_output": "No",
+        "name": "not_palindrome"
+      },
+      {
+        "input": "a",
+        "expected_output": "Yes",
+        "name": "single"
+      }
+    ],
+    "hints": [
+      "Compare string with its reverse",
+      "Or use two pointers from both ends"
+    ],
+    "xp_reward": 200,
+    "base_damage": 22
+  },
+  {
+    "id": "level2_08",
+    "area": "strings",
+    "title": "Vowel Counter",
+    "difficulty": "medium",
+    "description": "Read a string and count the number of vowels (a, e, i, o, u) in it. Case-insensitive.",
+    "starter_code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    // Count vowels\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "hello",
+        "expected_output": "2",
+        "name": "basic"
+      },
+      {
+        "input": "aeiou",
+        "expected_output": "5",
+        "name": "all_vowels"
+      },
+      {
+        "input": "xyz",
+        "expected_output": "0",
+        "name": "no_vowels"
+      }
+    ],
+    "hints": [
+      "Loop through each character",
+      "Check if c == 'a' || c == 'e' || ..."
+    ],
+    "xp_reward": 185,
+    "base_damage": 19
+  },
+  {
+    "id": "level2_09",
+    "area": "templates",
+    "title": "Generic Max",
+    "difficulty": "medium",
+    "description": "Write a template function `maximum` that returns the larger of two values. Test with integers.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Write template function here\n\nint main() {\n    int a, b;\n    cin >> a >> b;\n    cout << maximum(a, b);\n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5 3",
+        "expected_output": "5",
+        "name": "first_larger"
+      },
+      {
+        "input": "2 8",
+        "expected_output": "8",
+        "name": "second_larger"
+      }
+    ],
+    "hints": [
+      "template <typename T>",
+      "T maximum(T a, T b) { return (a > b) ? a : b; }"
+    ],
+    "xp_reward": 210,
+    "base_damage": 23
+  },
+  {
+    "id": "level2_10",
+    "area": "arrays",
+    "title": "Array Sum",
+    "difficulty": "medium",
+    "description": "Read integer n, then n integers. Print their sum.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Read n numbers and sum them\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "15",
+        "name": "basic"
+      },
+      {
+        "input": "3\n-1 0 1",
+        "expected_output": "0",
+        "name": "mixed"
+      },
+      {
+        "input": "1\n42",
+        "expected_output": "42",
+        "name": "single"
+      }
+    ],
+    "hints": [
+      "Use an array or accumulate as you read",
+      "sum += arr[i];"
+    ],
+    "xp_reward": 195,
+    "base_damage": 21
+  },
+  {
+    "id": "level3_01",
+    "area": "oop",
+    "title": "First Class",
+    "difficulty": "hard",
+    "description": "Create a class `Rectangle` with width and height. Implement a method `area()` that returns the area. Read w and h, create object, print area.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Rectangle class here\n\nint main() {\n    int w, h;\n    cin >> w >> h;\n    // Create Rectangle and print area\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5 3",
+        "expected_output": "15",
+        "name": "basic"
+      },
+      {
+        "input": "10 10",
+        "expected_output": "100",
+        "name": "square"
+      },
+      {
+        "input": "7 2",
+        "expected_output": "14",
+        "name": "wide"
+      }
+    ],
+    "hints": [
+      "class Rectangle { public: int width, height; int area() { return width * height; } };",
+      "Create object: Rectangle rect; rect.width = w; rect.height = h;"
+    ],
+    "xp_reward": 250,
+    "base_damage": 30
+  },
+  {
+    "id": "level3_02",
+    "area": "oop",
+    "title": "Constructor Challenge",
+    "difficulty": "hard",
+    "description": "Create class `Circle` with radius. Implement constructor and method `getArea()`. Use 3.14 for PI.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Circle class with constructor\n\nint main() {\n    double r;\n    cin >> r;\n    // Create Circle with constructor and print area\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "78.5",
+        "name": "radius_5"
+      },
+      {
+        "input": "10",
+        "expected_output": "314",
+        "name": "radius_10"
+      }
+    ],
+    "hints": [
+      "Circle(double r) : radius(r) {}",
+      "double getArea() { return 3.14 * radius * radius; }"
+    ],
+    "xp_reward": 270,
+    "base_damage": 32
+  },
+  {
+    "id": "level3_03",
+    "area": "oop",
+    "title": "Encapsulation Master",
+    "difficulty": "hard",
+    "description": "Create class `BankAccount` with private balance. Implement deposit(), withdraw(), and getBalance() methods. Start with 0, read n operations: 'd amount' for deposit, 'w amount' for withdraw. Print final balance.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define BankAccount class\n\nint main() {\n    // Process operations\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3\nd 100\nd 50\nw 30",
+        "expected_output": "120",
+        "name": "basic"
+      },
+      {
+        "input": "2\nd 200\nw 200",
+        "expected_output": "0",
+        "name": "zero_balance"
+      }
+    ],
+    "hints": [
+      "private: double balance;",
+      "void deposit(double amt) { balance += amt; }"
+    ],
+    "xp_reward": 290,
+    "base_damage": 34
+  },
+  {
+    "id": "level3_04",
+    "area": "oop",
+    "title": "Inheritance Basics",
+    "difficulty": "hard",
+    "description": "Create base class `Animal` with method speak(). Create derived class `Dog` that overrides speak() to print 'Woof'. Create a Dog object and call speak().",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Animal and Dog classes\n\nint main() {\n    // Create Dog and call speak\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Woof",
+        "name": "dog_speak"
+      }
+    ],
+    "hints": [
+      "class Animal { public: virtual void speak() {} };",
+      "class Dog : public Animal { public: void speak() { cout << \"Woof\"; } };"
+    ],
+    "xp_reward": 280,
+    "base_damage": 33
+  },
+  {
+    "id": "level3_05",
+    "area": "oop",
+    "title": "Static Members",
+    "difficulty": "hard",
+    "description": "Create class `Counter` with static int count. Increment count in constructor. Read n, create n Counter objects, print final count.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Counter class with static member\n\nint main() {\n    int n;\n    cin >> n;\n    // Create n Counter objects and print count\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "5",
+        "name": "five"
+      },
+      {
+        "input": "10",
+        "expected_output": "10",
+        "name": "ten"
+      }
+    ],
+    "hints": [
+      "static int count; in class",
+      "Initialize outside: int Counter::count = 0;"
+    ],
+    "xp_reward": 300,
+    "base_damage": 35
+  },
+  {
+    "id": "level3_06",
+    "area": "oop",
+    "title": "Operator Overloading",
+    "difficulty": "hard",
+    "description": "Create class `Complex` with real and imaginary parts. Overload + operator. Read two complex numbers (r1 i1 r2 i2), add them, print result as 'r+i'.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Complex class with operator+\n\nint main() {\n    double r1, i1, r2, i2;\n    cin >> r1 >> i1 >> r2 >> i2;\n    // Add complex numbers and print\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3 4 1 2",
+        "expected_output": "4+6",
+        "name": "basic"
+      },
+      {
+        "input": "5 -3 2 7",
+        "expected_output": "7+4",
+        "name": "mixed"
+      }
+    ],
+    "hints": [
+      "Complex operator+(const Complex& other)",
+      "return Complex(real + other.real, imag + other.imag);"
+    ],
+    "xp_reward": 320,
+    "base_damage": 37
+  },
+  {
+    "id": "level3_07",
+    "area": "oop",
+    "title": "Polymorphism Power",
+    "difficulty": "hard",
+    "description": "Create base class `Shape` with virtual area(). Create `Square` and `Circle` derived classes. Read 's r w' where r is circle radius and w is square width. Print circle area then square area.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Shape, Circle, and Square classes\n\nint main() {\n    char type;\n    double r, w;\n    cin >> type >> r >> w;\n    // Create shapes and print areas\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "s 5 4",
+        "expected_output": "78.5\n16",
+        "name": "basic"
+      }
+    ],
+    "hints": [
+      "virtual double area() = 0; for abstract base",
+      "Circle area: 3.14 * r * r, Square: w * w"
+    ],
+    "xp_reward": 340,
+    "base_damage": 39
+  },
+  {
+    "id": "level3_08",
+    "area": "oop",
+    "title": "Copy Constructor",
+    "difficulty": "hard",
+    "description": "Create class `Point` with x, y. Implement copy constructor. Read x1 y1, create p1, copy to p2, print p2's coordinates as 'x y'.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Point class with copy constructor\n\nint main() {\n    int x, y;\n    cin >> x >> y;\n    // Create and copy Point\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3 4",
+        "expected_output": "3 4",
+        "name": "basic"
+      },
+      {
+        "input": "-5 10",
+        "expected_output": "-5 10",
+        "name": "negative"
+      }
+    ],
+    "hints": [
+      "Point(const Point& other) : x(other.x), y(other.y) {}",
+      "Point p2 = p1; or Point p2(p1);"
+    ],
+    "xp_reward": 285,
+    "base_damage": 33
+  },
+  {
+    "id": "level3_09",
+    "area": "oop",
+    "title": "Friend Function",
+    "difficulty": "hard",
+    "description": "Create class `Box` with private length, width, height. Create friend function `volume()` that calculates volume. Read l, w, h and print volume.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Box class with friend function\n\nint main() {\n    int l, w, h;\n    cin >> l >> w >> h;\n    // Calculate and print volume\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "2 3 4",
+        "expected_output": "24",
+        "name": "basic"
+      },
+      {
+        "input": "5 5 5",
+        "expected_output": "125",
+        "name": "cube"
+      }
+    ],
+    "hints": [
+      "friend int volume(const Box& b);",
+      "return b.length * b.width * b.height;"
+    ],
+    "xp_reward": 295,
+    "base_damage": 34
+  },
+  {
+    "id": "level3_10",
+    "area": "oop",
+    "title": "Destructor Demo",
+    "difficulty": "hard",
+    "description": "Create class `Resource` with constructor that prints 'Acquired' and destructor that prints 'Released'. Read n, create n Resource objects in a scope. Print how many times 'Released' appears.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Resource class\n\nint main() {\n    int n;\n    cin >> n;\n    // Create resources in scope\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3",
+        "expected_output": "Acquired\nAcquired\nAcquired\nReleased\nReleased\nReleased",
+        "name": "three"
+      }
+    ],
+    "hints": [
+      "Resource() { cout << \"Acquired\\n\"; }",
+      "~Resource() { cout << \"Released\\n\"; }"
+    ],
+    "xp_reward": 310,
+    "base_damage": 36
+  },
+  {
+    "id": "level4_01",
+    "area": "dsa",
+    "title": "Two Sum",
+    "difficulty": "expert",
+    "description": "Given an array of integers and a target, find two numbers that add up to target. Print their indices (0-indexed) separated by space. Input: n, then n integers, then target.",
+    "starter_code": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Solve Two Sum\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "4\n2 7 11 15\n9",
+        "expected_output": "0 1",
+        "name": "basic"
+      },
+      {
+        "input": "3\n3 2 4\n6",
+        "expected_output": "1 2",
+        "name": "middle"
+      }
+    ],
+    "hints": [
+      "Use hash map to store values and indices",
+      "For each element, check if (target - element) exists in map"
+    ],
+    "xp_reward": 400,
+    "base_damage": 45
+  },
+  {
+    "id": "level4_02",
+    "area": "dsa",
+    "title": "Valid Parentheses",
+    "difficulty": "expert",
+    "description": "Check if string of parentheses (){}[] is valid. Print 'Valid' or 'Invalid'.",
+    "starter_code": "#include <iostream>\n#include <string>\n#include <stack>\nusing namespace std;\n\nint main() {\n    // Check valid parentheses\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "()",
+        "expected_output": "Valid",
+        "name": "simple"
+      },
+      {
+        "input": "()[]{}",
+        "expected_output": "Valid",
+        "name": "mixed"
+      },
+      {
+        "input": "(]",
+        "expected_output": "Invalid",
+        "name": "invalid"
+      }
+    ],
+    "hints": [
+      "Use a stack to match opening and closing brackets",
+      "Push opening brackets, pop and match closing ones"
+    ],
+    "xp_reward": 420,
+    "base_damage": 47
+  },
+  {
+    "id": "level4_03",
+    "area": "dsa",
+    "title": "Binary Search",
+    "difficulty": "expert",
+    "description": "Implement binary search. Read n, then n sorted integers, then target. Print index if found, -1 otherwise.",
+    "starter_code": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Implement binary search\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5\n1 2 3 4 5\n3",
+        "expected_output": "2",
+        "name": "found"
+      },
+      {
+        "input": "4\n1 3 5 7\n6",
+        "expected_output": "-1",
+        "name": "not_found"
+      }
+    ],
+    "hints": [
+      "Compare target with middle element",
+      "Adjust left or right boundaries based on comparison"
+    ],
+    "xp_reward": 380,
+    "base_damage": 43
+  },
+  {
+    "id": "level4_04",
+    "area": "dsa",
+    "title": "Linked List Reverse",
+    "difficulty": "expert",
+    "description": "Create a singly linked list from input. Reverse it. Print values space-separated. Input: n, then n integers.",
+    "starter_code": "#include <iostream>\nusing namespace std;\n\n// Define Node structure and reverse function\n\nint main() {\n    // Build and reverse linked list\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "5 4 3 2 1",
+        "name": "basic"
+      },
+      {
+        "input": "3\n10 20 30",
+        "expected_output": "30 20 10",
+        "name": "short"
+      }
+    ],
+    "hints": [
+      "Use three pointers: prev, current, next",
+      "Reverse links one by one"
+    ],
+    "xp_reward": 450,
+    "base_damage": 50
+  },
+  {
+    "id": "level4_05",
+    "area": "dsa",
+    "title": "Merge Sorted Arrays",
+    "difficulty": "expert",
+    "description": "Read two sorted arrays and merge them into one sorted array. Input: n1, array1, n2, array2. Output: merged array.",
+    "starter_code": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Merge two sorted arrays\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "3\n1 3 5\n3\n2 4 6",
+        "expected_output": "1 2 3 4 5 6",
+        "name": "basic"
+      },
+      {
+        "input": "2\n1 2\n2\n3 4",
+        "expected_output": "1 2 3 4",
+        "name": "sequential"
+      }
+    ],
+    "hints": [
+      "Use two pointers, one for each array",
+      "Compare and add smaller element to result"
+    ],
+    "xp_reward": 410,
+    "base_damage": 46
+  },
+  {
+    "id": "level4_06",
+    "area": "dsa",
+    "title": "Maximum Subarray Sum",
+    "difficulty": "expert",
+    "description": "Find maximum sum of contiguous subarray (Kadane's Algorithm). Input: n, then n integers. Output: max sum.",
+    "starter_code": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Find max subarray sum\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "9\n-2 1 -3 4 -1 2 1 -5 4",
+        "expected_output": "6",
+        "name": "mixed"
+      },
+      {
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "15",
+        "name": "all_positive"
+      }
+    ],
+    "hints": [
+      "Keep track of current sum and max sum",
+      "Reset current sum if it becomes negative"
+    ],
+    "xp_reward": 440,
+    "base_damage": 49
+  },
+  {
+    "id": "level4_07",
+    "area": "dsa",
+    "title": "First Non-Repeating Character",
+    "difficulty": "expert",
+    "description": "Find the first non-repeating character in a string. Print the character, or '-1' if none exists.",
+    "starter_code": "#include <iostream>\n#include <string>\n#include <unordered_map>\nusing namespace std;\n\nint main() {\n    // Find first non-repeating character\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "hello",
+        "expected_output": "h",
+        "name": "basic"
+      },
+      {
+        "input": "aabbcc",
+        "expected_output": "-1",
+        "name": "all_repeat"
+      },
+      {
+        "input": "programming",
+        "expected_output": "p",
+        "name": "complex"
+      }
+    ],
+    "hints": [
+      "Use hash map to count frequencies",
+      "Iterate again to find first with count 1"
+    ],
+    "xp_reward": 390,
+    "base_damage": 44
+  },
+  {
+    "id": "level4_08",
+    "area": "dsa",
+    "title": "LCA in Binary Tree",
+    "difficulty": "expert",
+    "description": "Find Lowest Common Ancestor of two nodes in a binary tree. Input format: size, tree as level order (use -1 for null), then two node values. Output: LCA value.",
+    "starter_code": "#include <iostream>\n#include <queue>\nusing namespace std;\n\n// Define TreeNode and LCA function\n\nint main() {\n    // Build tree and find LCA\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "7\n3 5 1 6 2 0 8\n5 1",
+        "expected_output": "3",
+        "name": "root_lca"
+      },
+      {
+        "input": "7\n3 5 1 6 2 0 8\n5 4",
+        "expected_output": "5",
+        "name": "one_is_lca"
+      }
+    ],
+    "hints": [
+      "If both nodes are in left subtree, LCA is in left",
+      "If one in left and one in right, current node is LCA"
+    ],
+    "xp_reward": 480,
+    "base_damage": 53
+  },
+  {
+    "id": "level4_09",
+    "area": "dsa",
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "expert",
+    "description": "Find length of longest increasing subsequence. Input: n, then n integers. Output: LIS length.",
+    "starter_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    // Find LIS length\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "8\n10 9 2 5 3 7 101 18",
+        "expected_output": "4",
+        "name": "basic"
+      },
+      {
+        "input": "4\n0 1 0 3",
+        "expected_output": "3",
+        "name": "simple"
+      }
+    ],
+    "hints": [
+      "Use dynamic programming",
+      "dp[i] = max length ending at index i"
+    ],
+    "xp_reward": 500,
+    "base_damage": 55
+  },
+  {
+    "id": "level4_10",
+    "area": "dsa",
+    "title": "Island Counter",
+    "difficulty": "expert",
+    "description": "Count number of islands in a grid. 1 = land, 0 = water. Islands are connected horizontally/vertically. Input: rows, cols, then grid. Output: island count.",
+    "starter_code": "#include <iostream>\n#include <vector>\nusing namespace std;\n\n// DFS or BFS to mark visited islands\n\nint main() {\n    // Count islands\n    \n    return 0;\n}",
+    "test_cases": [
+      {
+        "input": "4 5\n1 1 0 0 0\n1 1 0 0 0\n0 0 1 0 0\n0 0 0 1 1",
+        "expected_output": "3",
+        "name": "basic"
+      },
+      {
+        "input": "3 3\n1 1 1\n0 1 0\n1 1 1",
+        "expected_output": "1",
+        "name": "connected"
+      }
+    ],
+    "hints": [
+      "Use DFS/BFS to mark connected lands",
+      "Count each time you start a new DFS"
+    ],
+    "xp_reward": 520,
+    "base_damage": 57
+  }
+]

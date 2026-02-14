@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b61bmgchqphnx"]
+
+[ext_resource type="Script" uid="uid://d3eshmgd5s0ic" path="res://scripts/battle_console.gd" id="1_cs21g"]
+
+[node name="Control" type="Control" unique_id=220509959]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cs21g")
+
+[node name="Panel" type="Panel" parent="." unique_id=1481807098]
+z_index = 1
+y_sort_enabled = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=165208084]
+custom_minimum_size = Vector2(600, 300)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="QuestionLabel" type="Label" parent="Panel/VBoxContainer" unique_id=639247789]
+layout_mode = 2
+text = "Question will appear here..."
+autowrap_mode = 3
+
+[node name="CodeInput" type="TextEdit" parent="Panel/VBoxContainer" unique_id=349092518]
+clip_contents = true
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="Panel/VBoxContainer" unique_id=479929191]
+layout_mode = 2
+
+[node name="SubmitButton" type="Button" parent="Panel/VBoxContainer/ButtonContainer" unique_id=186498391]
+layout_mode = 2
+text = "Submit"
+
+[node name="CancelButton" type="Button" parent="Panel/VBoxContainer/ButtonContainer" unique_id=1602750085]
+layout_mode = 2
+text = "Cancel"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1641983358]

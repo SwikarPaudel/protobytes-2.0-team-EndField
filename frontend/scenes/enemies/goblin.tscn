@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cg8nbeixvx6of"]
+
+[ext_resource type="PackedScene" uid="uid://c0urvaobt2pif" path="res://scenes/enemies/enemy.tscn" id="1_yeoui"]
+[ext_resource type="Texture2D" uid="uid://cu6j55rf86msw" path="res://assets/sprites/enemies/goblin.png" id="2_fydqd"]
+
+[node name="Area2D" unique_id=1586443679 instance=ExtResource("1_yeoui")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1783005804]
+position = Vector2(0, -65)
+texture = ExtResource("2_fydqd")
+hframes = 7
+vframes = 5
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=327241776]
+position = Vector2(0, -59)

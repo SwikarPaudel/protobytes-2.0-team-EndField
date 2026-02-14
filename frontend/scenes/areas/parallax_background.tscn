@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://04i72n2mmcyd"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=604451482]
+
+[node name="Mountains" type="ParallaxLayer" parent="." unique_id=191356712]
+
+[node name="Sprite2D" type="Sprite2D" parent="Mountains" unique_id=969662260]
+
+[node name="Trees" type="ParallaxLayer" parent="." unique_id=1213333645]
+
+[node name="Sprite2D" type="Sprite2D" parent="Trees" unique_id=1365391102]
+
+[node name="Grass" type="ParallaxLayer" parent="." unique_id=712027648]
+
+[node name="Sprite2D" type="Sprite2D" parent="Grass" unique_id=1952351720]

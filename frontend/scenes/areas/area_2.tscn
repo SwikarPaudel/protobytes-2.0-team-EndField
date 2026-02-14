@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c3pjpnfcmpnnh"]
+
+[ext_resource type="Script" uid="uid://hibx4dbknyqw" path="res://scripts/area_2.gd" id="1_xhpt0"]
+
+[node name="Node2D" type="Node2D" unique_id=1700951201]
+script = ExtResource("1_xhpt0")
+
+[node name="Ground" type="TileMap" parent="." unique_id=929927419]
+format = 2
+
+[node name="Decoration" type="TileMap" parent="." unique_id=1438147769]
+format = 2
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="." unique_id=945794478]
+
+[node name="SpawnPoints" type="Node2D" parent="." unique_id=459788885]
+
+[node name="EnemySpawn1" type="Marker2D" parent="SpawnPoints" unique_id=908972973]
+
+[node name="EnemySpawn2" type="Marker2D" parent="SpawnPoints" unique_id=1868584036]
+
+[node name="AreaTransition" type="Area2D" parent="." unique_id=311294874]
+
+[node name="ToArea1" type="Area2D" parent="AreaTransition" unique_id=72488312]
+
+[node name="ToArea2" type="Area2D" parent="AreaTransition" unique_id=891080170]

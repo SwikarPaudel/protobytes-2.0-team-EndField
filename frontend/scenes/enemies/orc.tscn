@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dbfw3lcjvn337"]
+
+[ext_resource type="PackedScene" uid="uid://c0urvaobt2pif" path="res://scenes/enemies/enemy.tscn" id="1_obyuh"]
+[ext_resource type="Texture2D" uid="uid://b0t2bopqk1vgj" path="res://assets/sprites/enemies/orc.png" id="2_gici0"]
+
+[node name="Area2D" unique_id=1586443679 instance=ExtResource("1_obyuh")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1783005804]
+texture = ExtResource("2_gici0")
