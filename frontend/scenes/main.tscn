@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cylxpatyd4yfu"]
+
+[ext_resource type="PackedScene" uid="uid://cflnl2sdhy3ci" path="res://scenes/areas/base_area.tscn" id="1_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://bcff2pymeu3mm" path="res://scenes/player/player.tscn" id="2_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://b61bmgchqphnx" path="res://scenes/ui/battle_console.tscn" id="3_tefeu"]
+[ext_resource type="Script" uid="uid://bwh71jdat5nqp" path="res://scripts/api_client.gd" id="4_o6xl0"]
+
+[node name="GameManager" type="Node" unique_id=534079773]
+
+[node name="Current Area" parent="." unique_id=1700951201 instance=ExtResource("1_jyhfs")]
+
+[node name="Player" parent="." unique_id=1567863715 instance=ExtResource("2_tbgi4")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2060680405]
+layer = 100
+
+[node name="BattleConsole" parent="CanvasLayer" unique_id=220509959 instance=ExtResource("3_tefeu")]
+z_index = 999
+y_sort_enabled = true
+
+[node name="APIClient" type="Node" parent="." unique_id=1561513106]
+script = ExtResource("4_o6xl0")

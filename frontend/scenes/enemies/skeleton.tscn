@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cbtrdcfw68j25"]
+
+[ext_resource type="PackedScene" uid="uid://c0urvaobt2pif" path="res://scenes/enemies/enemy.tscn" id="1_crlql"]
+[ext_resource type="Texture2D" uid="uid://f7jgsgokpbaf" path="res://assets/sprites/enemies/skeleton.png" id="2_5365w"]
+
+[node name="Area2D" unique_id=1586443679 instance=ExtResource("1_crlql")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1783005804]
+texture = ExtResource("2_5365w")
