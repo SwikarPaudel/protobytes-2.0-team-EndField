@@ -1,4 +1,4 @@
-###Play2Code: Learning C++ by Playing Games
+### Play2Code: Learning C++ by Playing Games
 ---
 **Team Name**: EndField
 **Team Members**:
